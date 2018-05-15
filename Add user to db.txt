@@ -1,0 +1,15 @@
+	use admin
+	db.createUser(
+	  {
+		user: "charming",
+		pwd: "INSTANCE-ID",
+		roles: [ { role: "root", db: "admin" } ]
+	  }
+	)
+
+	
+	
+# To login after user 
+#	mongo --port 27017 -u "charming" -p "Password" --authenticationDatabase "admin"
+#  After you add the user change security settings in mongod.conf see mongo manual 
+# be sure the Subdirectory is owned by user mongo

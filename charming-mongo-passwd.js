@@ -1,0 +1,1 @@
+db.changeUserPassword("charming", "INSTANCE-ID")
